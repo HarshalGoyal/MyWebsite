@@ -1,0 +1,24 @@
+<html>
+<body>
+    <form id="search" method="POST">
+        <input type="text" name = "name" id="name">
+        <br/>
+        <button  type="submit">Send</button>    
+    </form> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("user_YXXn1zVBQuA6B3vic3p4j");
+      console.log('initialised emailjs successfully');
+
+      })();
+  </script>
+  <script type="text/javascript">
+    console.log('running email script');
+    document.getElementById('search').addEventListener('submit',function(event){
+      console.log('i am running now');
+     /* var nameInput = document.getElementById('user_name');*/ 
+    });
+  </script>
+</body>
+</html>
